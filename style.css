@@ -118,3 +118,57 @@ body {
 .header .search-form label:hover {
     color: var(--main-color);
 }
+
+.header .cart-items-container {
+    position: absolute;
+    top: 100%;
+    width: 28rem;
+    background-color:#fff;
+    height: 80vh;
+    right: -100%;
+    border: solid 1px black;
+    padding: 0.8rem;
+}
+
+.header .cart-items-container.active {
+    right: 0;
+}
+
+.header .cart-items-container .cart-item {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    border: solid 1px black;
+    position: relative;
+    gap: 1rem;
+}
+
+.header .cart-items-container .cart-item img {
+    width: 7rem;
+}
+
+.header .cart-items-container .cart-item  span {
+    position: absolute;
+    top: 5%;
+    right: 4%;
+    font-size: 2rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .cart-items-container .cart-item  span:hover {
+    color: red;
+}
+
+.header .cart-items-container .cart-item .content h3 {
+    font-size: 1.2rem;
+    color: var(--black);
+    padding-bottom: 0.5rem;
+
+}
+
+.header .cart-items-container .cart-item .content .price {
+    font-size: 1rem;
+    color: var(--main-color);
+
+}
