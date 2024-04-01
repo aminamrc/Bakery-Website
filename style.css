@@ -17,7 +17,10 @@
     text-decoration: none;
     text-transform: capitalize;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    transition: all .5s ease-in ;
+    transition: all .5s ease-in;
+    scroll-behavior: smooth;
+    scroll-padding-top: 16vh;
+
 }
 
 html {
@@ -349,13 +352,92 @@ section {
 .cheese-cakes .wrapper .cheese-card .content .price {
     color:#fff;
     font-size: 1.8rem;
-
-
 }
 
 .cheese-cakes .wrapper .cheese-card .content .price span {
     color:#fff;
     font-size: 1.4rem;
     text-decoration: line-through;
+}
 
+/*new arrivals*/
+
+.new-arrivals .wrapper .card {
+    background-color: #ffdca9;
+    border: var(--border);
+}
+
+.new-arrivals .wrapper .card .img {
+    width: 100%;
+}
+
+.new-arrivals .wrapper .card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.new-arrivals .wrapper .card .content {
+    padding: 2rem;
+}
+
+.new-arrivals .wrapper .card .content a:nth-of-type(1) {
+    font-size: 2.5rem;
+    line-height: 5rem;
+    color: var(--black);
+
+}
+
+.new-arrivals .wrapper .card .content p {
+    color: gray;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+
+.new-arrivals .wrapper .card:hover .content p {
+    color: var(--black);
+}
+
+.new-arrivals .wrapper .card .content .btn {
+  transform: scale(0); 
+}
+
+.new-arrivals .wrapper .card:hover .content .btn {
+    transform: scale(1); 
+}
+
+/*about us*/
+
+.about .container {
+    display: flex;
+    justify-content: center;
+    background-color: var(--black);
+    flex-wrap: wrap;
+}
+
+.about .container .img {
+    flex: 1 1 45rem;
+}
+
+.about .container .img img {
+    width: 100%;
+}
+
+.about .container .content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.about .container .content  h3 {
+    font-size: 3rem;
+    color: #fff;
+    padding: 1.2rem 0;
+}
+
+.about .container .content p {
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 2.2rem;
 }
