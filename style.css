@@ -6,6 +6,7 @@
     --card-color: #c0dbea;
     --border: .1rem solid var(--card-color);
     --box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    --text-shadow: 2px 2px 0 var(--card-color), -2px -2px 0 var(--card-color), -2px 2px 0 var(--card-color), 2px -2px 0 var(--card-color);
 }
 
 *{
@@ -53,8 +54,7 @@ section {
 }
 
 .title {
-    text-shadow: 2px 2px 0 var(--card-color), -2px -2px 0 var(--card-color), -2px 2px 0 var(--card-color), 2px -2px 0 var(--card-color);
-    text-align: center;
+    text-shadow: var(--text-shadow);
     color:#fff;
     text-transform: uppercase;
     padding: 3.5rem 0;
@@ -440,4 +440,80 @@ section {
     color: #ccc;
     padding: 1rem 0;
     line-height: 2.2rem;
+}
+
+/*review*/
+
+.review .wrapper .review-card {
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+
+.review .wrapper .review-card img {
+    height: 4rem;
+}
+
+.review .wrapper .review-card p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: gray;
+    padding: 2rem 0;
+}
+
+.review .wrapper .review-card:hover p {
+    color: var(--black);
+}
+
+.review .wrapper .review-card .costumer {
+    height: 7rem;
+    width: 7rem;
+    object-fit:cover;
+    border-radius: 50%;
+}
+
+.review .wrapper .review-card .costumer:hover {
+    transform: scale(1.1);
+}
+
+.review .wrapper .review-card h3 {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow:  var(--text-shadow);
+}
+
+.review .wrapper .review-card .stars i {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding: 0.8rem 0;
+}
+
+.contact .contents {
+    display: flex;
+    background-color: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
+    height:50rem;
+}
+
+.contact .contents iframe {
+    height: 100%;
+    flex: 1 1 45rem;
+    object-fit: cover;
+}
+
+.contact .contents form {
+    height: 100%;
+    flex: 1 1 45rem;
+    text-align: center;
+    padding: 5rem 2 rem;
+}
+
+.contact .contents form h3 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3.5 rem;
+    padding: 1rem 0;
 }
