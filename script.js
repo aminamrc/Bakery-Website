@@ -13,7 +13,7 @@ const cartItemsContainer = document.querySelector (".cart-items-container");
 cartIcon.addEventListener ('click', () => {
     cartItemsContainer.classList.toggle("active");
     searchForm.classList.remove("active");
-    navBar.classList.remove("active");
+    navBar.classList.remove("active"); 
 });
 
 
