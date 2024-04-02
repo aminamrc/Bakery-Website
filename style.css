@@ -21,7 +21,6 @@
     transition: all .5s ease-in;
     scroll-behavior: smooth;
     scroll-padding-top: 16vh;
-
 }
 
 html {
@@ -46,7 +45,6 @@ section {
     margin-top: 1rem;
     cursor: pointer;
     text-align: center;
-
 }
 
 .btn:hover {
@@ -80,15 +78,14 @@ section {
 }
 
 .header .logo img {
-    height: 8rem;
+    height: 10rem;
     border-radius: 50%;
 }
 
 .header .navbar a {
     color: #fff;
     font-size: 1.8rem;
-    margin: 0 1rem;
-   
+    margin: 0 1rem;  
 }
 
 .header .navbar a:hover {
@@ -97,7 +94,6 @@ section {
     border-bottom: .3rem solid var(--black); 
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-
 }
 
 .header .icons {
@@ -129,8 +125,7 @@ section {
     right: -100%;
     width: 45rem;
     height: 4.5rem;
-    background-color: #fff;
-    
+    background-color: #fff;   
 }
 
 .header .search-form.active {
@@ -145,7 +140,6 @@ section {
     text-transform: none;
     font-size: 1.8rem;
     color: var(--black);
-
 }
 
 .header .search-form label { 
@@ -207,13 +201,11 @@ section {
     font-size: 1.5rem;
     color: var(--black);
     padding-bottom: 0.8rem;
-
 }
 
 .header .cart-items-container .cart-item .content .price {
     font-size: 1.5rem;
     color: var(--main-color);
-
 }
 
 /*home section*/
@@ -331,7 +323,8 @@ section {
 
 
 .cheese-cakes .wrapper .cheese-card .img img {
-    height: 20rem;
+    /*height: 20rem;*/
+    width: 100%;
 }
 
 .cheese-cakes .wrapper .cheese-card .content h3 {
@@ -495,25 +488,170 @@ section {
     background-color: var(--black);
     flex-wrap: wrap;
     gap: 1rem;
-    height:50rem;
+    /*height: 50rem;*/
 }
 
 .contact .contents iframe {
-    height: 100%;
+    height: 50rem;
     flex: 1 1 45rem;
     object-fit: cover;
 }
 
 .contact .contents form {
-    height: 100%;
+    height: 50rem;
     flex: 1 1 45rem;
     text-align: center;
-    padding: 5rem 2 rem;
+    padding: 5rem 2rem;
 }
 
 .contact .contents form h3 {
     text-transform: uppercase;
     color: #fff;
     font-size: 3.5 rem;
+    padding: 1.5rem 0;
+}
+
+.contact .contents form .input-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    border: var(--border);
+}
+
+.contact .contents form .input-box span {
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .contents form .input-box input {
+    background-color: var(--black);
+    text-transform: none;
+    color: #fff;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.8rem;
+}
+
+/*footer*/
+
+footer {
+    background-color: var(--black);
+    text-align: center;
+}
+
+.footer .social-media {
     padding: 1rem 0;
+}
+
+.footer .social-media a {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: var(--border);
+    margin: 0.5rem;
+}
+
+
+.footer .social-media a:hover {
+    background-color: var(--main-color);
+}
+
+.footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.footer .links a {
+    padding: .7rem 2rem;
+    color: #fff;
+    border: var(--border);
+    font-size: 2rem;
+}
+
+.footer .links a:hover {
+    background-color: var(--main-color);
+}
+
+.footer .credits {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: ligther;
+    padding: 1.5rem;
+}
+
+
+.footer .credits span {
+    color: var(--main-color);
+}
+
+/*tablets,small laptops*/
+
+@media (max-width: 992px) {
+    html {
+        font-size: 55%;
+    }
+    .header .logo img {
+        height: 9rem;
+    }    
+}
+
+/*small tablets*/ 
+
+@media (max-width: 768px) {
+    section {
+        padding: 2rem;
+    }
+    .header .icons .menu-icon {
+        display: inline-block;
+    }
+    .home {
+        background-position: left;
+    }
+    .home .hero h3 {
+        font-size: 4.5rem;
+    }
+
+    .home .hero p {
+        font-size: 1.5rem;
+    }
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 30rem;
+        background-color: #fff;
+        height: 80vh;
+    }
+    .header .navbar a {
+        color: var(--main-color);
+        display: block;
+        font-size: 2rem;
+        padding: 0.5rem;
+        margin: 1.5rem;
+    }
+    .header .navbar.active {
+        right: 0;
+    }
+    .header .search-form {
+        width: 92%;
+    }
+
+    .header .search-form.active {
+       right: 4%;   
+    }
+}
+
+/*smart-phone*/
+
+@media (max-width: 550px) {
+    html {
+        font-size: 50%;
+    }
 }
